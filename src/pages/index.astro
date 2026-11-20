@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import banner from '../assets/images/joyere.jpg';
+import plan from '../assets/images/plan.jpg';
+---
+
+<Layout
+	title="Protégeons la Joyère contre l'urbanisation de masse"
+	description="Protégeons le plateau de la Joyère au Grand-Bornand contre l'urbanisation de masse."
+	keywords="Grand-Bornand,Club Med,urbanisation,environnement"
+>
+	<header>
+		<Image
+			src={banner}
+			alt="Protégeons la Joyère – vue aérienne enneigée du plateau de la Joyère avec la zone du projet surlignée en rouge"
+			class="h-auto w-full"
+			loading="eager"
+			widths={[640, 1024, 1583]}
+			sizes="100vw"
+		/>
+	</header>
+
+	<article class="mx-auto max-w-3xl px-4 py-12 leading-relaxed">
+		<section>
+			<h1 class="mb-6 font-serif text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">L’association</h1>
+			<p class="mb-4">
+				Notre association s’oppose catégoriquement aux projets d’aménagements hôteliers et touristiques prévus sur
+				le plateau de la Joyère, au Grand-Bornand, dans le cadre de la révision du SCoT (Schéma de COhérence Territoriale)
+				Fier-Aravis 2019.
+			</p>
+			<p>
+				Nous souhaitons préserver cet espace de prairie et d’alpage, sa faune, sa flore et ses paysages
+				exceptionnels. Motivés et déterminés, nous mettrons tous les moyens nécessaires pour aboutir à
+				l’annulation de ce projet.
+			</p>
+
+			<div class="mt-8 aspect-video overflow-hidden rounded-lg shadow-md">
+				<iframe
+					class="size-full"
+					src="https://www.youtube-nocookie.com/embed/FACUCiVHMlw"
+					title="Vidéo YouTube : Protégeons la Joyère"
+					loading="lazy"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+			</div>
+		</section>
+
+		<section class="mt-12">
+			<h2 class="mb-6 font-serif text-2xl font-bold tracking-tight text-stone-900">Notre mission</h2>
+			<p class="mb-4">
+				Vous avez sans doute eu connaissance du projet immobilier Club Med sur les pâturages vierges de la Joyère.
+			</p>
+			<p class="mb-8">
+				Ce projet de construction immobilier auquel les habitants n’ont pas été associés ni consultés fait
+				actuellement débat et nous sommes un certain nombre à nous être exprimés sur le sujet. Extrêmement
+				attentifs à l’avenir de notre village, à l’avenir de nos enfants et à l’avenir de nos pâturages et
+				n’ayant pas été entendus, nous avons décidé de créer l’Association « Protégeons le Plateau de la Joyère
+				contre l’Urbanisation de Masse », structure nous donnant les moyens d’intervenir dans un cadre légal.
+			</p>
+
+			<figure class="mb-8">
+				<Image
+					src={plan}
+					alt="Vue 3D du plateau de la Joyère en été, avec l’emprise du projet surlignée en rouge"
+					class="h-auto w-full rounded-lg shadow-md"
+					widths={[640, 1024, 1631]}
+					sizes="(min-width: 768px) 768px, 100vw"
+				/>
+			</figure>
+
+			<p class="border-l-4 border-lime-600 bg-lime-50 px-5 py-4 font-semibold text-stone-900">
+				Notre première mission et objectif est de faire annuler ce projet de Club Med à La Joyère (connu sous le
+				nom de UTN2 dans le projet de révision du SCoT 2019)
+			</p>
+		</section>
+	</article>
+</Layout>
