@@ -5,8 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lajoyere.github.io',
-  base: '/www',
+  site: 'https://protegeons-la-joyere.fr',
   vite: {
     plugins: [tailwindcss()]
   }
